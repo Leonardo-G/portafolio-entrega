@@ -7,7 +7,7 @@ html {
     box-sizing: border-box;
 }
 
-p, h1, h2, span, li{
+p, h1, h2, h3, span, li, button{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -89,19 +89,19 @@ h1{
     line-height: 1;
 }
 
-.js, .html5, .css, .git, .sass, .npm, .bs, .node, .react{
+.frontPage .js,.frontPage .html5,.frontPage .css,.frontPage .git,.frontPage .sass,.frontPage .npm, .frontPage .bs, .frontPage .node, .frontPage .react{
     position: absolute;
 }
 
-.node{
+.frontPage .node{
     top: 37%
 }
 
-.react{
+.frontPage .react{
     top: 5%;
 }
 
-.bs{
+.frontPage .bs{
     top: 15%;
     left: 40%;
 }
@@ -111,26 +111,26 @@ h1{
     left: 70%;
 }
 
-.js{
+.frontPage .js{
     top: 20%;
     left: 20%;
 }
 
-.css{
+.frontPage .css{
     top: 20%;
     left: 90%;
 }
 
-.git{
+.frontPage .git{
     top: 30%;
     left: 39%;
 }
 
-.sass{
+.frontPage .sass{
     left: 60%;
 }
 
-.npm{
+.frontPage .npm{
     top: 40%;
     left: 95%;
 }
@@ -152,4 +152,95 @@ svg {
     margin-top: -60px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.about{
+    display: flex;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__info{
+    flex: 1;
+    padding: 20px 80px;
+}
+
+.about__info p{
+    line-height: 2;
+}
+
+.about__info a{
+    color: #fff;
+}
+
+.about__info .button{
+    margin-top: 50px;
+    border: none;
+    padding: 20px;
+    background: #000;
+}
+
+.about__tecno{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 35px;
+}
+
+.about__tecno i {
+    font-size: 105px;
+}
+
+.about__tecno .ts, .about__tecno .express{
+    height: 104px;
+}
+
+.certifications{
+    border-bottom: 3px solid #000;
+    border-top: 3px solid #000;
+}
+
+.course{
+    padding: 20px 20px;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 20px;
+}
+
+.course:last-of-type{
+    border-bottom: none;
+}
+
+.course__title{
+    font-size: 25px;
+    font-weight: 700;
+    flex: 2;
+}
+
+.course__from{
+    font-size: 21px;
+    font-weight: 400;
+    flex: 1;
+}
+
+.course__link{
+    flex: 1;
+}
+
+.course__year{
+    flex: 1;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.course__plus{
+    font-size: 70px;
+    flex: 0.2;
+    cursor: pointer;
 }
