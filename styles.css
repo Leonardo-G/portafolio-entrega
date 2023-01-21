@@ -7,7 +7,7 @@ html {
     box-sizing: border-box;
 }
 
-p, h1, h2, h3, span, li, button{
+p, h1, h2, h3, span, li, button, a{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -202,11 +202,36 @@ svg {
     border-top: 3px solid #000;
 }
 
-.course{
-    padding: 20px 20px;
+.target{
     border-right: 2px solid #000;
     border-left: 2px solid #000;
     border-bottom: 2px solid #000;
+}
+
+.target__info{
+    overflow: hidden;
+    position: relative;
+}
+
+.line{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: #000;
+    width: 0%;
+    transition: 2s all ease;
+}
+
+.line--activated{
+    visibility: visible;
+    width: 100%;
+    transition: 2s all ease;
+}
+
+.course{
+    padding: 20px 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -243,4 +268,55 @@ svg {
     font-size: 70px;
     flex: 0.2;
     cursor: pointer;
+    transition: 0.6s all ease;
+}
+
+.course__plus.rotate{
+    transform: rotate(45deg);
+    transition: 0.6s all ease;
+}
+
+.infoCourse{
+    background: yellow;
+    height: 0;
+    transition: 1s all ease;
+    transform: translateY(-100%);
+}
+
+.infoCourse--activated{
+    height: auto;
+    transition: 1s all ease;
+    transform: translateY(0%);
+}
+
+.padding{
+    padding: 50px;
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-around;
+}
+
+.padding .info {
+    flex: 1;
+}
+
+.padding .certificates{
+    flex: 1;
+}
+
+.padding img{
+    height: 200px;
+}
+
+.infoCourse li{
+    list-style: disc;
+}
+
+.infoCourse .tecnology{
+    margin-top: 20px;
+}
+
+.infoCourse .tecnology p:last-of-type{
+    font-weight: 600;
+    margin-top: 10px;
 }
