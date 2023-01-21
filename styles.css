@@ -15,10 +15,18 @@ ul{
    list-style: none; 
 }
 
+.section{
+    padding: 150px 0;
+}
+
 .relative {
     position: relative;
     width: 100%;
     height: 100%;
+}
+
+.hidden{
+    overflow: hidden;
 }
 
 .container {
@@ -136,6 +144,11 @@ h1{
 }
 
 /* SOBRE MI */
+
+h3.container{
+    font-size: 40px;
+    padding: 30px 0px;
+}
 
 .title {
     text-align: center;
@@ -258,6 +271,10 @@ svg {
     flex: 1;
 }
 
+.course__link:hover{
+    text-decoration: underline;
+}
+
 .course__year{
     flex: 1;
     font-size: 18px;
@@ -319,4 +336,108 @@ svg {
 .infoCourse .tecnology p:last-of-type{
     font-weight: 600;
     margin-top: 10px;
+}
+
+/* PROJECTS */
+
+.projects {
+    background: #000;
+}
+
+.titleProjects{
+    display: flex;
+    overflow: hidden;
+    column-gap: 60px;
+    background: yellow;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(3deg);
+    justify-content: center;
+    width: 200%;
+    margin-top: 50px;
+}
+
+.titleProjects h3{
+    font-size: 55px;
+}
+
+.titleProjects h3:nth-of-type(odd){
+    color: #fff;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 600px 300px;
+    gap: 50px;
+}
+
+.project{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid--1a{
+    grid-column: 1 / 7;
+}
+
+.grid--2a{
+    grid-column: 7 / 13;
+}
+
+.grid--1b{
+    grid-column: 1 / 5;
+}
+
+.grid--2b{
+    grid-column: 5 / 9;
+}
+
+.grid--3b{
+    grid-column: span 4;
+}
+
+.grid--3c{
+    grid-column: span 4;
+}
+
+.grid--9c{
+    grid-column: span 8;
+}
+
+.project__links{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(202, 202, 2, 0.705);
+    display: flex;
+    column-gap: 20px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 6px;
+    transition: all .3s ease;
+    transform: scale3d(0);
+}
+
+.project:hover .project__links{
+    transition: all .3s ease;
+    transform: scale3d(1);
+}
+
+.icon--000{
+    color: #000;
+    cursor: pointer;
+}
+
+.icon--000:hover{
+    color: #fff;
 }
