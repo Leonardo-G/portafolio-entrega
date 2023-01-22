@@ -626,14 +626,18 @@
                 <p>Correo: guanuco43@gmail.com</p>
             </div>
             <div class="backContact container">
-                <form class="contact">
-                    <input class="contact__input" type="text" placeholder="EMAIL">
-                    <input class="contact__input" type="text" placeholder="NOMBRE">
-                    <textarea class="contact__input" name="" id="" cols="30" rows="10" placeholder="MENSAJE"></textarea>
-                    <input class="class__input input--button" type="button" value="Enviar">
+                <form class="contact" action="mailto:guanuco43@gmail.com">
+                    <input class="contact__input" name="" type="email" placeholder="EMAIL">
+                    <input class="contact__input" type="text" name="subject" placeholder="NOMBRE">
+                    <textarea class="contact__input" name="body" cols="30" rows="10" placeholder="MENSAJE"></textarea>
+                    <input class="class__input input--button" type="submit" value="Enviar">
                 </form>
             </div>
         </section>
+        <div class="footerTransparent"></div>
+        <footer class="footer">
+            <p>Leonardo Guanco - Portafolio</p>
+        </footer>
     </main>
     
     <script src="https://kit.fontawesome.com/fe5071cad1.js" crossorigin="anonymous"></script>
