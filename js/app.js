@@ -3,7 +3,6 @@ const info = document.querySelectorAll(".line");
 const course = document.querySelectorAll(".infoCourse");
 
 const handleClickPlusButton = (e) => {
-    console.log(e)
     const indexButton = e.target.dataset.button;
 
     const lineCourse = info[indexButton];

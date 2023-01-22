@@ -7,7 +7,7 @@ html {
     box-sizing: border-box;
 }
 
-p, h1, h2, h3, span, li, button, a{
+p, h1, h2, h3, span, li, button, a, textarea, input{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -476,4 +476,48 @@ svg {
 
 .project--more .icon--000{
     font-size: 50px;
+}
+
+/* CONTACTO */
+.titleContact{
+    background: yellow;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.titleContact h3{
+    font-size: 50px;
+}
+
+.backContact{
+    margin: 100px auto;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: min( 700px, 95% );
+    row-gap: 50px;
+}
+
+.contact__input{
+    padding: 20px 30px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #000;
+    font-weight: 600;
+    max-width: 100%;
+}
+
+.input--button{
+    padding: 20px;
+    background: yellow;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.input--button:hover{
+    background: rgb(238, 238, 40);
 }
