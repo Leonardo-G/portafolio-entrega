@@ -1,6 +1,8 @@
 const plusButton = document.querySelectorAll(".course__plus");
 const info = document.querySelectorAll(".line");
 const course = document.querySelectorAll(".infoCourse");
+const button = document.querySelector(".nav__button");
+const navResponsive = document.querySelector("#nav-responsive");
 
 const handleClickPlusButton = (e) => {
     const indexButton = e.target.dataset.button;
@@ -13,6 +15,11 @@ const handleClickPlusButton = (e) => {
     infoCourse.classList.toggle("infoCourse--activated");
 }
 
+const handleNavResponsive = () => {
+    navResponsive.classList.toggle("responsive--actived");
+}
+
 plusButton.forEach( p => {
     p.addEventListener( "click", handleClickPlusButton );
 } )
+button.addEventListener( "click", handleNavResponsive );

@@ -16,7 +16,7 @@
             <div>
                 <p class="logo">Leonardo guanuco</p>
             </div>
-            <ul>
+            <ul class="nav__links">
                 <li>
                     <a href="">Inicio</a>
                 </li>
@@ -30,9 +30,40 @@
                     <a>Contacto</a>
                 </li>
             </ul>
-            <div>
-                <i class="fa-brands fa-square-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
+            <div class="nav__social">
+                <a href="https://github.com/Leonardo-G" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/leonardo-guanuco-frontend/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="nav__button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav__responsive" id="nav-responsive">
+                <ul class="responsive--links">
+                    <li>
+                        <a href="">Inicio</a>
+                    </li>
+                    <li>
+                        <a>Sobre mí</a>
+                    </li>
+                    <li>
+                        <a>Proyectos</a>
+                    </li>
+                    <li>
+                        <a>Contacto</a>
+                    </li>
+                </ul>
+                <div class="responsive--social">
+                    <a href="https://github.com/Leonardo-G" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/leonardo-guanuco-frontend/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
@@ -43,28 +74,28 @@
                     <h1>Hola, Soy Leonardo Guanuco</h1>
                     <p>Desarrollador de JavaScript</p>
                 </div>
-                <i class="js fa-brands fa-js"></i>
-                <i class="html5 fa-brands fa-html5"></i>
-                <i class="css fa-brands fa-css3-alt"></i>
-                <i class="sass fa-brands fa-sass"></i>
-                <i class="react fa-brands fa-react"></i>
-                <i class="bs fa-brands fa-bootstrap"></i>
-                <i class="node fa-brands fa-node-js"></i>
-                <i class="npm fa-brands fa-npm"></i>
-                <i class="git fa-brands fa-git-alt"></i>
+                <i class="icon--nav js fa-brands fa-js"></i>
+                <i class="icon--nav html5 fa-brands fa-html5"></i>
+                <i class="icon--nav css fa-brands fa-css3-alt"></i>
+                <i class="icon--nav sass fa-brands fa-sass"></i>
+                <i class="icon--nav react fa-brands fa-react"></i>
+                <i class="icon--nav bs fa-brands fa-bootstrap"></i>
+                <i class="icon--nav node fa-brands fa-node-js"></i>
+                <i class="icon--nav npm fa-brands fa-npm"></i>
+                <i class="icon--nav git fa-brands fa-git-alt"></i>
             </div>
         </section>
         <section class="">
             <div class="title">
 
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <svg class="titleSvg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="700px" height="240px" xml:space="preserve">
                     <defs>
                         <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
                         <path fill="#000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
                         </pattern>
                         
-                        <text id="text" transform="translate(2,116)" font-family="'Cabin Condensed'" font-size="150">SOBRE MÍ</text>
+                        <text id="text" transform="translate(2,116)" font-family="'Cabin Condensed'" class="titleText" font-size="150">SOBRE MÍ</text>
                         
                         <mask id="text-mask">
                         <use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff"/>
@@ -114,12 +145,12 @@
                     <i class="sass fa-brands fa-sass"></i>
                     <i class="bs fa-brands fa-bootstrap"></i>
                     <i class="js fa-brands fa-js"></i>
-                    <img class="ts" src="./img/ts.svg"/>
+                    <img class="icon__img ts" src="./img/ts.svg"/>
                     <i class="react fa-brands fa-react"></i>
                     <i class="node fa-brands fa-node-js"></i>
-                    <img src="./img/mongodb.svg"/>
-                    <img class="express" src="./img/express.png"/>
-                    <img src="./img/nextjs.svg"/>
+                    <img class="icon__img" src="./img/mongodb.svg"/>
+                    <img class="icon__img express" src="./img/express.png"/>
+                    <img class="icon__img" src="./img/nextjs.svg"/>
                     <i class="npm fa-brands fa-npm"></i>
                     <i class="git fa-brands fa-git-alt"></i>
                     <i class="fa-brands fa-square-github"></i>
@@ -496,6 +527,7 @@
                 </div>
             </div>
         </section>
+        <div class="certifications__bottom"></div>
         <section class="section hidden projects">
             <div class="projectsLine projectsLine--1"></div>
             <div class="projectsLine projectsLine--2"></div>

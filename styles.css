@@ -15,6 +15,12 @@ ul{
    list-style: none; 
 }
 
+main{
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
 section{
     background-color: #fff;
 }
@@ -71,6 +77,58 @@ a{
     line-height: 0.4;
 }
 
+.nav__button{
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+.nav__responsive{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s all ease-in-out;
+}
+
+@media ( max-width: 920px ) {
+    .nav .nav__links, .nav .nav__social{
+        display: none;
+    }
+
+    .nav .nav__button{
+        display: inherit
+    }
+
+    .responsive--actived{
+        transform: translateX(0%);
+        transition: .3s all ease-in-out;
+    }
+
+    .responsive--actived .responsive--links{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .responsive--social{
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+    }
+}
+
 /* INICIO */
 .frontPage{
     background: yellow;
@@ -80,7 +138,7 @@ a{
     overflow: hidden;
 }
 
-.frontPage i {
+.frontPage .icon--nav{
     font-size: 125px;
 }
 
@@ -147,6 +205,47 @@ h1{
     left: 95%;
 }
 
+@media ( max-width: 920px ) {
+    .frontPage .icon--nav{
+        font-size: 80px;
+    }
+    .frontPage__info h1{
+        font-size: 40px;
+    }
+
+    .frontPage__info p{
+        font-size: 20px;
+    }
+    .frontPage .frontPage__info{
+        top: 65%;
+    }
+
+    .padding{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    
+    .padding img {
+        object-fit: contain;
+    }
+
+    .certificates{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media ( max-width: 720px ) {
+
+    .titleText{
+        font-size: 100px;
+    }
+    
+    .titleSvg{
+        height: 160px;
+    }
+}
+
 /* SOBRE MI */
 
 h3.container{
@@ -169,11 +268,12 @@ svg {
     margin-top: -60px;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
 }
 
 .about{
     display: flex;
-    margin: 100px auto;
+    padding: 100px 0;
     justify-content: center;
     align-items: center;
 }
@@ -217,7 +317,11 @@ svg {
 .certifications{
     border-bottom: 3px solid #000;
     border-top: 3px solid #000;
-    margin-bottom: 150px;
+}
+
+.certifications__bottom{
+    height: 150px;
+    background-color: #fff;
 }
 
 .target{
@@ -343,6 +447,63 @@ svg {
     margin-top: 10px;
 }
 
+@media ( max-width: 920px ) {
+    .about{
+        column-gap: 50px
+    }
+    .about__info {
+        padding: 0;
+        font-size: 14px;
+    }
+    .about__tecno i{
+        font-size: 50px;
+    }
+
+    .about__tecno .icon__img{
+        height: 50px;
+    }
+
+    .course p, .course a, .course__plus, .padding p, .padding li{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 720px) {
+    .about{
+        flex-direction: column-reverse;
+    }
+
+    .about__info p{
+        margin-top: 20px;
+    }
+
+    .about__tecno{
+        column-gap: 10px;
+    }
+}
+
+
+@media ( max-width: 480px ) {
+    .padding{
+        padding: 20px;
+    }
+
+    .padding img{
+        height: auto;
+    }
+
+    .course__link, .course__from {
+        display: none;
+    }
+
+    .titleText{
+        font-size: 50px;
+    }
+
+    h3.container{
+        font-size: 18px;
+    }
+}
 /* PROJECTS */
 
 .projects {
@@ -482,6 +643,10 @@ svg {
     font-size: 50px;
 }
 
+.project--more p {
+    text-align: center;
+}
+
 /* CONTACTO */
 .titleContact{
     background: yellow;
@@ -544,5 +709,4 @@ svg {
 .footerTransparent{
     height: 85px;
     background: transparent;
-    z-index: 99;
 }
