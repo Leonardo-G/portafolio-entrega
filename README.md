@@ -2,4 +2,4 @@
 
 Proyecto final de la entrega de Front End Academy.
 
-[Link del GitHub Pages](https://github.com/Leonardo-G/portafolio-entrega)
+[Link del GitHub Pages](https://leonardo-g.github.io/portafolio-entrega/)
