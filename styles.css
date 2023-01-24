@@ -5,6 +5,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 p, h1, h2, h3, span, li, button, a, textarea, input{
@@ -23,6 +24,10 @@ main{
 
 section{
     background-color: #fff;
+}
+
+.body{
+    overflow-y: hidden;
 }
 
 .section{
@@ -246,6 +251,12 @@ h1{
     }
 }
 
+@media ( max-width: 480px ) {
+    .frontPage{
+        height: 750px;
+    }
+}
+
 /* SOBRE MI */
 
 h3.container{
@@ -268,7 +279,6 @@ svg {
     margin-top: -60px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
 }
 
 .about{
@@ -469,6 +479,10 @@ svg {
 }
 
 @media (max-width: 720px) {
+    .title svg{
+        width: 100%;
+    }
+
     .about{
         flex-direction: column-reverse;
     }
@@ -647,6 +661,40 @@ svg {
     text-align: center;
 }
 
+@media ( max-width: 920px ) {
+    .grid{
+        grid-template-rows: 300px 200px 200px 200px;
+        gap: 10px;
+    }
+
+    .project__links{
+        opacity: 1;
+    }
+
+}
+
+@media ( max-width: 720px ) {
+    .project__links{
+        opacity: 1;
+    }
+}
+
+@media ( max-width: 480px ) {
+    .titleProjects{
+        width: 100%;
+    }
+
+    .project__links {
+        font-size: 20px;
+        column-gap: 10px;
+        padding: 5px;
+    }
+
+    .project--more p{
+        font-size: 12px;
+    }
+}
+
 /* CONTACTO */
 .titleContact{
     background: yellow;
@@ -709,4 +757,10 @@ svg {
 .footerTransparent{
     height: 85px;
     background: transparent;
+}
+
+@media ( max-width: 480px ) {
+    footer p{
+        font-size: 12px;
+    }
 }
